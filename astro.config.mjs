@@ -6,21 +6,47 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+      customCss: [
+        './src/styles/theme.css',
+      ],
+			title: 'База знань Bluesky',
+      defaultLocale: 'uk',
+      locales: {
+        uk: {
+          label: 'Українська',
+        },
+      },
+      editLink: {
+        baseUrl: 'https://github.com/navix/info.bsky.one/edit/main/',
+      },
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/navix/info.bsky.one',
+        blueSky: 'https://bsky.app/profile/bsky.one',
 			},
 			sidebar: [
+        {
+          label: 'Головна',
+          slug: 'home'
+        },
+        {
+          label: 'Основи',
+          items: [
+            { slug: 'basics/bluesky' },
+            { slug: 'basics/atproto' },
+            { slug: 'basics/join' },
+            { slug: 'basics/public', label: 'Що публічне і приватне?' },
+            { slug: 'basics/handle' },
+            { slug: 'basics/feed' },
+            { slug: 'basics/mute' },
+            { slug: 'basics/block' },
+          ]
+        },
 				{
-					label: 'Guides',
+					label: 'Посібники',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ slug: 'guides/custom-handle' },
+						{ slug: 'guides/custom-feed' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),
