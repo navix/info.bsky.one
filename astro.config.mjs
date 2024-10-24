@@ -10,10 +10,11 @@ export default defineConfig({
         './src/styles/theme.css',
       ],
 			title: 'База знань Bluesky',
-      defaultLocale: 'uk',
+      defaultLocale: 'root',
       locales: {
-        uk: {
+        root: {
           label: 'Українська',
+          lang: 'uk'
         },
       },
       editLink: {
@@ -25,7 +26,7 @@ export default defineConfig({
 			},
 			sidebar: [
         {
-          label: 'Головна',
+          label: 'Home',
           slug: 'home'
         },
         {
