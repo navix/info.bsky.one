@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      customCss: ['./src/styles/theme.css'],
+      customCss: ['./src/styles/theme.css', './src/styles/common.css'],
       title: 'База знань Bluesky',
       defaultLocale: 'root',
       locales: {
@@ -24,7 +24,6 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Home',
           slug: 'home',
         },
         {
@@ -36,6 +35,7 @@ export default defineConfig({
             {slug: 'basics/public'},
             {slug: 'basics/handle'},
             {slug: 'basics/feed'},
+            {slug: 'basics/list'},
             {slug: 'basics/mute'},
             {slug: 'basics/block'},
           ],
