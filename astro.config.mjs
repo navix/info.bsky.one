@@ -21,6 +21,7 @@ export default defineConfig({
       social: {
         github: 'https://github.com/navix/info.bsky.one',
         blueSky: 'https://bsky.app/profile/bsky.one',
+        email: 'mailto:hey@bsky.one',
       },
       sidebar: [
         {
