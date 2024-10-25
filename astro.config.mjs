@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      customCss: ['./src/styles/theme.css', './src/styles/common.css'],
+      customCss: ['./src/fonts/fixel.css', './src/styles/theme.css', './src/styles/common.css'],
       title: 'База знань Bluesky',
       defaultLocale: 'root',
       locales: {

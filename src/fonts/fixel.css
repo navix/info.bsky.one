@@ -1,0 +1,25 @@
+:root {
+  --sl-font: Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --sl-font: FixelVariable, Segoe UI, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: FixelVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('./FixelVariable.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: FixelVariable;
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('./FixelVariable.ttf') format('truetype');
+}
