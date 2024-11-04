@@ -6,6 +6,7 @@
   :root {
     --sl-font: FixelVariable, Segoe UI, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
+    font-weight: 475;
   }
 }
 

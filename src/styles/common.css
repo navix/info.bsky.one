@@ -1,6 +1,7 @@
 .sl-markdown-content img {
   border-radius: 0.5rem;
   max-width: min(48rem, 100%);
+  width: 100%;
   margin: 1rem auto;
 }
 
