@@ -45,6 +45,7 @@ export default defineConfig({
             {slug: 'basics/moderation'},
             {slug: 'basics/list'},
             {slug: 'basics/settings'},
+            {slug: 'extra/starter-pack'},
           ],
         },
         {
@@ -58,7 +59,6 @@ export default defineConfig({
             {slug: 'extra/clients'},
             {slug: 'extra/custom-handle'},
             {slug: 'extra/custom-feed'},
-            {slug: 'extra/starter-pack'},
             {slug: 'extra/embed'},
             {slug: 'extra/kawaii-mode'},
           ],
