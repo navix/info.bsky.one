@@ -4,6 +4,7 @@ description: Як формується псевдонім у Bluesky?
 ---
 
 import {Aside} from '@astrojs/starlight/components';
+import Img from '@components/Img.astro';
 
 Псевдонім (хендл) — це нікнейм, як і в інших соцмережах. Але в Bluesky він має такий самий формат,
 як і адреси сайтів в інтернеті з @ на початку (_напр. @google.com_).
@@ -17,11 +18,7 @@ import {Aside} from '@astrojs/starlight/components';
 <Aside>
   Наприклад, ми знаємо що профіль Української Правди є офіційним, бо він має псевдонім
   [@pravda.ua](https://bsky.app/profile/pravda.ua).
-  <img
-    src="/images/handle-pravda.png"
-    alt="Ukr pravda handle"
-    style="max-width: 600px; margin: 1rem auto 0;"
-  />
+  <Img src="/images/handle-pravda.png" ar="1053/571" alt="Ukr pravda handle" />
 </Aside>
 
 Якщо у вас є власний домен, ви можете

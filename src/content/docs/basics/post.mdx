@@ -4,6 +4,7 @@ description: Як створити новий пост/реплай
 ---
 
 import {Aside} from '@astrojs/starlight/components';
+import Img from '@components/Img.astro';
 
 Пост — основна одиниця контенту у Bluesky. Це одночасно і допис, і коментар. Він може містити текст,
 медіа, теги та інші дані.
@@ -17,7 +18,7 @@ import {Aside} from '@astrojs/starlight/components';
 
 Максимальна довжина поста — 300 символів.
 
-<img src="/images/post-1.png" class="app-left-center" style="aspect-ratio: 1091/598" />
+<Img src="/images/post-1.png" ar="1091/598" />
 
 ### Додавання медіа
 
@@ -25,31 +26,31 @@ import {Aside} from '@astrojs/starlight/components';
 
 Наразі обмеження по тривалості відео — 60 секунд.
 
-<img src="/images/post-2.png" class="app-left-center" style="aspect-ratio: 1091/598" />
+<Img src="/images/post-2.png" ar="1091/598" />
 
 ### Мова
 
 У правому нижньому куту можна виставити мову (мови) поста, вона використовується для підказок та
 фільтрації.
 
-<img src="/images/post-3.png" class="app-left-center" style="aspect-ratio: 1091/598" />
+<Img src="/images/post-3.png" ar="1095/667" />
 
 ### Попередження про дорослий контент
 
 Якщо ваші медіа містять дорослий контент, виберіть відповідне налаштування у правому верхньому куту.
 
-<img src="/images/post-4.png" class="app-left-center" style="aspect-ratio: 1092/989" />
+<Img src="/images/post-4.png" ar="1092/989" />
 
-<img src="/images/post-4-1.png" class="app-left-center" style="aspect-ratio: 1091/752;" />
+<Img src="/images/post-4-1.png" ar="1091/752" />
 
 ### Хто може взаємодіяти
 
 Внизу зліва над панеллю медіа є налаштування, хто може коментувати ваш пост, та чи можна його
 цитувати.
 
-<img src="/images/post-5.png" class="app-left-center" style="aspect-ratio: 1091/598" />
+<Img src="/images/post-5.png" ar="1091/598" />
 
-<img src="/images/post-5-1.png" class="app-left-center" style="aspect-ratio: 982/910" />
+<Img src="/images/post-5-1.png" ar="982/910" />
 
 ## Треди
 
@@ -59,7 +60,7 @@ import {Aside} from '@astrojs/starlight/components';
 
 Щоб опублікувати відразу декілька постів, натисніть на кнопку з іконкою плюса справа внизу.
 
-<img src="/images/post-9.png" class="app-left-center" style="aspect-ratio: 1081/837" />
+<Img src="/images/post-9.png" ar="1081/837" />
 
 ## Редагування
 
@@ -69,7 +70,7 @@ import {Aside} from '@astrojs/starlight/components';
 
 Щоб відповісти на пост, натисніть на відповідну кнопку під постом.
 
-<img src="/images/post-6.png" class="app-left-center" style="aspect-ratio: 1097/881" />
+<Img src="/images/post-6.png" ar="1097/881" />
 
 ## Репости
 
@@ -77,7 +78,7 @@ import {Aside} from '@astrojs/starlight/components';
 
 Також цей репост буде показано у стрічці ваших фоловерів.
 
-<img src="/images/post-7.png" class="app-left-center" style="aspect-ratio: 1087/799" />
+<Img src="/images/post-7.png" ar="1087/799" />
 
 ## Цитування
 
@@ -89,6 +90,6 @@ import {Aside} from '@astrojs/starlight/components';
   контексту.
 </Aside>
 
-<img src="/images/post-8.png" class="app-left-center" style="aspect-ratio: 1087/799" />
+<Img src="/images/post-8.png" ar="1087/799" />
 
-<img src="/images/post-8-1.png" class="app-left-center" style="aspect-ratio: 1091/939" />
+<Img src="/images/post-8-1.png" ar="1091/939" />
